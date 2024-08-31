@@ -1,11 +1,11 @@
-package com.hsik.poilerplate
+package com.hsik.boilerplate
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class PoilerplateApplication
+class BoilerplateApplication
 
 fun main(args: Array<String>) {
-    runApplication<PoilerplateApplication>(*args)
+    runApplication<BoilerplateApplication>(*args)
 }

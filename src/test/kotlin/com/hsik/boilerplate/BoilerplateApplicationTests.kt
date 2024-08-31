@@ -1,13 +1,11 @@
-package com.hsik.poilerplate
+package com.hsik.boilerplate
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class PoilerplateApplicationTests {
-
+class BoilerplateApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }
