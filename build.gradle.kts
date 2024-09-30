@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("jacoco")
-    id("org.springframework.boot") version "3.3.3"
-    id("io.spring.dependency-management") version "1.1.5"
+    id("org.springframework.boot") version "3.3.4"
+    id("io.spring.dependency-management") version "1.1.6"
     id("org.jetbrains.kotlin.jvm") version "2.0.20"
     id("org.jetbrains.kotlin.plugin.spring") version "2.0.20"
     id("org.jmailen.kotlinter") version "4.4.1"
@@ -18,7 +18,7 @@ version = "0.0.1-SNAPSHOT"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
@@ -73,7 +73,7 @@ dependencies {
 
     // Other
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
-    implementation("org.apache.httpcomponents.client5:httpclient5:5.4-beta1")
+    implementation("org.apache.httpcomponents.client5:httpclient5:5.4")
 }
 
 configurations {
@@ -99,7 +99,7 @@ tasks.check {
 kotlin {
     compilerOptions {
         freeCompilerArgs.addAll("-Xjsr305=strict")
-        jvmTarget = JvmTarget.JVM_17
+        jvmTarget = JvmTarget.JVM_21
     }
 }
 
